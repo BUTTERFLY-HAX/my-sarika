@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarika Web</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="menubar">
+    <span>File</span>
+    <span>Edit</span>
+    <div class="title">Sarika Web</div>
+  </div>
+
+  <div class="app">
+    <div class="left">
+      <div id="textScroller" class="text-scroller">
+        <span id="done" class="done"></span>
+        <span id="rest" class="rest"></span>
+      </div>
+
+      <div class="typed-echo" id="typedEcho"></div>
+      <input id="capture" class="capture" autocomplete="off" />
+    </div>
+
+    <div class="right">
+      <div class="row"><div class="label">ടൈപ്പ് ചെയ്തത്</div><div class="val" id="typedCount">0</div></div>
+      <div class="row"><div class="label">മൊത്തം</div><div class="val" id="totalCount">0</div></div>
+      <div class="row"><div class="label">CPM</div><div class="val highlight" id="cpm">0.000000000</div></div>
+      <div class="row"><div class="label">തെറ്റുകൾ</div><div class="val warn" id="mistakes">0</div></div>
+      <div class="row"><div class="label">പൂർണ്ണത (%)</div><div class="val" id="percent">0.000000000</div></div>
+      <div class="buttons">
+        <button id="saveBtn">Save result</button>
+        <button id="restartBtn">Restart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="timerbar">
+    <span id="timer">15:00</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
