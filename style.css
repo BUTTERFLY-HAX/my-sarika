@@ -30,7 +30,7 @@ body {
 /* passage */
 .text-scroller {
   background:#fff; border:1px solid #cfcfcf; padding:10px; overflow:auto;
-  white-space: pre-wrap; line-height:1.6; font-size:15px;
+  white-space: pre-wrap; line-height:1.6; font-size:12px;
 }
 
 /* typed echo box */
