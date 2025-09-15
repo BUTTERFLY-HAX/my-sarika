@@ -22,21 +22,27 @@ body {
 }
 .left {
   display:grid;
-  grid-template-rows: 1fr 1fr auto; /* equal top/bottom */
+  grid-template-rows: auto 1fr auto;
   gap:10px;
   min-width:0;
 }
 
 /* passage */
 .text-scroller {
-  background:#fff; border:1px solid #cfcfcf; padding:10px; overflow:auto;
+  background:#fff; border:1px solid #cfcfcf; padding:10px;
+  height: 300px;
+  overflow: auto;
   white-space: pre-wrap; line-height:1.6; font-size:12px;
 }
 
 /* typed echo box */
 .typed-echo {
   background:#fff; border:1px solid #cfcfcf; padding:10px; overflow:auto;
-  white-space: pre-wrap; font-size:12px; height:100%;
+  white-space: pre-wrap; font-size:12px;
+  height: 250px;
+}
+.typed-text-container {
+  display: none; /* Hide this container to avoid confusion with the main scroller */
 }
 
 /* per-grapheme styling; sarika blue overlay */
